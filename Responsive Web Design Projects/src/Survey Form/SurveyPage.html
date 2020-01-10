@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+    <head>
+    <title>Survey Form</title>
+    <Link rel="Stylesheet" type="text/css" href="SurveyStyle.css">
+    </head>
+    <body>
+        <h1 id="title">Survey Form</h1>
+        <div id="main">
+            
+            <p id="Description">Let us know how we can improve Ultimatix</p>
+            <form id="survey-form" method="GET" action="https://learn.freecodecamp.org/responsive-web-design/responsive-web-design-projects/build-a-survey-form">
+                <div class="rowtab">
+                    <div class="labels">
+                        <label id="name-label" for="name">* Name</label>
+                    </div>
+                    <div class="inputs">
+                        <Input type="text" id="name" placeholder="Enter Your Name" required>
+                    </div>
+                </div>
+                
+                <div class="rowtab">
+                    <div class="labels">
+                        <label id="email-label" for="email">*Email ID</label>
+                    </div>
+                    <div class="inputs">
+                        <Input type="text" id="email" placeholder="Enter Your Email" required>
+                    </div>
+                </div>
+                
+                <div class="rowtab">
+                    <div class="labels">
+                        <label id="number-label" for="age">*Age</label>
+                    </div>
+                    <div class="inputs">
+                        <Input type="Number" id="number" placeholder="Enter Your Age" min="18" max="45" required>
+                    </div>
+                </div>
+                
+                <div class="rowtab">
+                    <div class="labels">
+                        <label id="dropdown-label" for="Currentpos">Your Current role</label>
+                    </div>
+                    <div class="inputs">
+                        <select type="dropdown" id="Currentpos"  required>
+                        <option disabled value>Select an option</option>
+                        <option value="Intern">Intern</option>
+                        <option value="Associate">Associate</option>
+                        <option value="Experienced Professional">Experienced Professional</option>
+                        <option value="Admin">Admin</option>
+                        <option value="Others">Others</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="rowtab">
+                    <div class="labels">
+                        <label for="Rating">How will you rate your experience at Ultimatix?</label>
+                    </div>
+                    <div class="inputs">
+                        <ul style="list-style:none" id="radio">
+                            <li><label><Input type="radio" id="radio-buttons" value="Good">Good</label></li>
+                            <li><label><Input type="radio" id="radio-buttons" value="Satisfying">Satisfying</label></li>
+                            <li><label><Input type="radio" id="radio-buttons" value="Can Be Improved">Can be Improved</label></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="rowtab">
+                    <div class="labels">
+                        <label for="Preference">What can be Improved?</label>
+                    </div>
+                    <div class="inputs">
+                        <Input type="Checkbox" id="pref" value="1">Design
+                        <Input type="Checkbox" id="pref" value="2">Functionality
+                        <Input type="Checkbox" id="pref" value="3">Complexity
+                        <Input type="Checkbox" id="pref" value="4">Reports
+                    </div>
+                </div>
+                
+                <div class="rowtabs">
+                    <div class="labels">
+                        <label for="feedback">Any Comments:</label>
+                    </div>
+                    <div class="Inputs">
+                        <Input type="textarea" id="feedback">
+                    </div>
+                </div>
+                
+                <div class="Submit-Button">
+                    <Button type="Submit" Id="Submit" Name="Submit">Submit</button>
+                </div>
+                
+                
+                
+            </form>            
+        </div>
+    </body>
+</html>
